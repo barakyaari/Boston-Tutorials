@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/getLayout">
+
+    <EditText
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etSend" />
+
+    <Button
+        android:layout_below="@+id/etSend"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Activity"
+        android:id="@+id/buttonSA" />
+
+    <Button
+        android:layout_alignTop="@+id/buttonSA"
+        android:layout_toLeftOf="@+id/buttonSA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="StartActivityForResult"
+        android:id="@+id/buttonSAFR" />
+
+    <TextView
+        android:layout_below="@+id/buttonSAFR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/textViewGot" />
+</RelativeLayout>

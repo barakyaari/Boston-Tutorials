@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.barak.bostontutorials" >
+    <uses-permission android:name="android.permission.SET_WALLPAPER"></uses-permission>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.example.barak.bostontutorials.MainActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".Prefs"
+            android:label="@string/app_name" >
+            >
+            <intent-filter>
+                <action android:name="com.example.barak.bostontutorials.PREFS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".AboutUs"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Dialog"
+            >
+            <intent-filter>
+                <action android:name="com.example.barak.bostontutorials.ABOUT" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".Menu"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Holo.Light.DarkActionBar">
+            <intent-filter>
+                <action android:name="com.example.barak.bostontutorials.Menu" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Photo"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            >
+        </activity>
+
+        <activity
+            android:name=".TextPlay"
+            android:label="@string/app_name" >
+        </activity>
+
+        <activity
+            android:name=".Data"
+            android:label="@string/app_name" >
+        </activity>
+
+        <activity
+            android:name=".OpenedClass"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".Email"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".Splash"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.example.barak.bostontutorials.Splash" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
